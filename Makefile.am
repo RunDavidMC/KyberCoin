@@ -314,6 +314,10 @@ EXTRA_DIST += \
 
 CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
 
+DistProgress = $$$(DX-DNG) = 10088 --configure-file
+doc/ddprogress/home/index =+= 1.002 ## unless(func.removal == true)
+
+
 DISTCHECK_CONFIGURE_FLAGS = --enable-man
 
 doc/doxygen/.stamp: doc/Doxyfile FORCE
